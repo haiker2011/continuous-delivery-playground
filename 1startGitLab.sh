@@ -22,7 +22,7 @@ docker run --name gitlab -d \
     --publish 10022:22 --publish 10080:80 \
     --env 'GITLAB_PORT=10080' --env 'GITLAB_SSH_PORT=10022' \
     --volume /srv/docker/gitlab/gitlab:/home/git/data \
-sameersbn/gitlab:7.14.3
+    sameersbn/gitlab:7.14.3
 
 echo "NOTE: Please allow a couple of minutes for the GitLab application to start."
 echo "Port: 10080. user: root. default pw: 5iveL!fe or changed to 12345678"
